@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("images/50x50.svg");
+  background-size: cover; /* Boyut */
+  background-repeat: repeat; /* Tekrar */
+  background-position: center center; /* Ortalansın */
+  background-size: 50px 50px; /* Tam genişlik ve yükseklik */
+  /* Opaklık için rgba ile renk katmanı ekleme */
+  background-blend-mode: overlay; /* Renk ve arka plan görüntüsü karışımı */
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: moveBackground 150s linear infinite; /* Animasyonu uygula */
+}
+
+@keyframes moveBackground {
+  50% {
+    background-position: top right; /* Başlangıç konumu: sağ üst */
+  }
+  5% {
+    background-position: bottom left; /* Bitiş konumu: sol alt */
+  }
+}
